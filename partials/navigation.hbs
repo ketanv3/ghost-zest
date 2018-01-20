@@ -1,0 +1,5 @@
+<nav class="site-navigation">
+{{#foreach navigation}}
+    <a href="{{url absolute="true"}}" class="site-nav-link hover-blue nav-{{slug}}{{#if current}} nav-current{{/if}}">{{label}}</a>
+{{/foreach}}
+</nav>
