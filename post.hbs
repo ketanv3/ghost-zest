@@ -17,9 +17,7 @@ into the {body} of the default.hbs template --}}
         <article class="post-full max-width {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
 
             <header class="post-card-header lr-padding">
-                <a class="post-card-content-link" href="{{url}}">
-                    <h2 class="post-card-title">{{title}}</h2>
-                </a>
+                <h2 class="post-card-title">{{title}}</h2>
 
                 <p class="post-card-details">Published on <time class="post-full-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM, YYYY"}}</time>
                     {{#if primary_tag}}
