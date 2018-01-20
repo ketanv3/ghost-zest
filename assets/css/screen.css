@@ -176,6 +176,7 @@ pre {
     background-color: #f8f8f8;
     font-size: 16px;
     margin-bottom: 1.85rem;
+    line-height: 1.4em;
 }
 
 code {
@@ -208,7 +209,11 @@ hr {
 }
 
 li + li {
-    margin-top: 0.8em;
+    margin-top: 0.4em;
+}
+
+li {
+    line-height: 1.8em;
 }
 
 ul, ol {
