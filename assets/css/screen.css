@@ -1,0 +1,222 @@
+@import "normalize.css";
+@import "../fonts/font.css";
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    color: #343b3f;
+    font-size: 16px;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-rendering: optimizeLegibility;
+}
+
+.site-header {
+    display: flex;
+    padding: 2.2rem 2.4rem;
+    font-family: MuseoSansRounded, sans-serif;
+}
+
+.max-width {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.max-width.site-header {
+    margin-bottom: 4rem;
+}
+
+.lr-padding {
+    padding: 0 2.4rem;
+}
+
+.site-title {
+    color: #343b3f;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.site-navigation {
+    flex: 1;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: right;
+    vertical-align: middle;
+    font-weight: 700;
+}
+
+p {
+    line-height: 1.8em;
+    margin-bottom: 1.85em;
+}
+
+h1, h2, h3, h4 {
+    font-family: MuseoSansRounded, sans-serif;
+    font-weight: 700;
+}
+
+.post-card-header, .site-footer {
+    font-family: MuseoSansRounded, sans-serif;
+}
+
+.site-footer {
+    display: flex;
+    font-size: 19px;
+    font-weight: 500;
+    color: #AAB2BD;
+    margin-top: 5rem;
+    padding: 3.2rem 2.4rem;
+    font-family: MuseoSansRounded, sans-serif;
+}
+
+.copyright {
+    flex: 1;
+}
+
+.post-card-excerpt {
+    margin-top: 2rem;
+    font-size: 19px;
+    text-align: justify;
+}
+
+.post-card-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.post-card-details {
+    color: #AAB2BD;
+    margin-top: 0.6rem;
+    margin-bottom: 2rem;
+    font-size: 17px;
+}
+
+.post-card-tags {
+    color: #656D78;
+    font-weight: 700;
+}
+
+.post-card + .post-card {
+    margin-top: 8rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.site-nav-link {
+    transition: 0.1s all linear;
+}
+
+.footer-nav-link {
+    text-align: center;
+}
+
+.footer-nav-link > .fa {
+    width: 24px;
+}
+
+.site-nav-link + .site-nav-link {
+    margin-left: 1rem;
+}
+
+.footer-nav-link + .footer-nav-link {
+    margin-left: 0.6rem;
+}
+
+.hover-blue:hover {
+    color: #3EB6E4;
+}
+
+.hover-grey:hover {
+    color: #656D78;
+}
+
+.pagination {
+    font-family: MuseoSansRounded, sans-serif;
+    color: #AAB2BD;
+    font-size: 16px;
+    margin-top: 4rem;
+    display: flex;
+}
+
+.page-number {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+}
+
+.page-number-container {
+    text-align: center;
+}
+
+.older-posts-container {
+    text-align: right;
+}
+
+.one-third {
+    flex: 1;
+}
+
+@media screen and (max-width: 960px) {
+    .post-card-excerpt, .site-footer {
+        font-size: 17px;
+    }
+
+    .post-card-title {
+        font-size: 36px;
+    }
+
+    .post-card + .post-card {
+        margin-top: 6rem;
+    }
+
+    .post-card-details {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .lr-padding {
+        padding: 0 1.6rem;
+    }
+
+    .site-header, .site-footer {
+        padding: 2rem 1.6rem;
+    }
+
+    .post-card-details {
+        margin-bottom: 1.4rem;
+    }
+
+    .post-card-excerpt {
+        margin-top: 1.4rem;
+        font-size: 16px;
+    }
+
+    .post-card-title {
+        margin-bottom: 0.4rem;
+        font-size: 28px;
+    }
+
+    .post-card + .post-card {
+        margin-top: 5rem;
+    }
+
+    .pagination {
+        font-size: 15px;
+    }
+
+    .page-number {
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+    }
+}

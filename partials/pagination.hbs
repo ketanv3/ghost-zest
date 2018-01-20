@@ -1,0 +1,17 @@
+<nav class="pagination max-width lr-padding" role="navigation">
+    <div class="one-third newer-posts-container">
+        {{#if prev}}
+        <a class="newer-posts hover-grey" href="{{page_url prev}}"><i class="fa fa-angle-left" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Newer Posts</a>
+        {{/if}}
+    </div>
+
+    <div class="one-third  page-number-container">
+        <span class="page-number">Page {{page}} of {{pages}}</span>
+    </div>
+
+    <div class="one-third older-posts-container">
+        {{#if next}}
+        <a class="older-posts hover-grey" href="{{page_url next}}">Older Posts&nbsp;&nbsp;&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+        {{/if}}
+    </div>
+</nav>
