@@ -59,6 +59,7 @@ p {
 h1, h2, h3, h4 {
     font-family: MuseoSansRounded, sans-serif;
     font-weight: 700;
+    margin-top: 2em;
 }
 
 .post-card-header, .site-footer {
@@ -79,7 +80,7 @@ h1, h2, h3, h4 {
     flex: 1;
 }
 
-.post-card-excerpt {
+.post-card-excerpt, .post-full-content {
     margin-top: 2rem;
     font-size: 19px;
     text-align: justify;
@@ -136,8 +137,12 @@ a {
     color: #3EB6E4;
 }
 
-.hover-grey:hover {
+.hover-grey:hover, .post-card-author:hover {
     color: #656D78;
+}
+
+.hover-black:hover {
+    color: #343b3f;
 }
 
 .pagination {
@@ -166,8 +171,98 @@ a {
     flex: 1;
 }
 
+pre {
+    padding: 4px 0;
+    background-color: #f8f8f8;
+    font-size: 16px;
+}
+
+code {
+    background-color: #f8f8f8;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+blockquote {
+    border-left: 3px solid #3eb0ef;
+    margin: 0;
+    font-style: italic;
+    padding: 0 0 0 1.85rem;
+}
+
+mark {
+    background-color: #FFCE54;
+    color: #000;
+}
+
+hr {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 2.5em 0 3.5em;
+    padding: 0;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #E3E9ED;
+}
+
+li + li {
+    margin-top: 0.8em;
+}
+
+ul, ol {
+    margin-bottom: 1.85rem;
+}
+
+.post-full-content img {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.share-icon {
+    font-family: MuseoSansRounded, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.share-icon i {
+    margin-left: 8px;
+}
+
+.share-icon + .share-icon {
+    margin-left: 16px;
+}
+
+.share-icon {
+    background-color: #f8f8f8;
+    padding: 10px 12px;
+    border-radius: 5px;
+    transition: 0.1s all linear;
+}
+
+.share-icon:hover {
+    background-color: #f3f3f3;
+}
+
+.share-icon.twitter {
+    color: #1a8bf0;
+}
+
+.share-icon.facebook {
+    color: #3b5998;
+}
+
+.share-container {
+    margin-top: 4rem;
+}
+
+.post-card-content-link {
+    transition: 0.1s all linear;
+}
+
 @media screen and (max-width: 960px) {
-    .post-card-excerpt, .site-footer {
+    .post-card-excerpt, .site-footer, .post-full-content {
         font-size: 17px;
     }
 
@@ -181,6 +276,10 @@ a {
 
     .post-card-details {
         font-size: 16px;
+    }
+
+    pre {
+        font-size: 15px;
     }
 }
 
@@ -197,7 +296,7 @@ a {
         margin-bottom: 1.4rem;
     }
 
-    .post-card-excerpt {
+    .post-card-excerpt, .post-full-content {
         margin-top: 1.4rem;
         font-size: 16px;
     }
@@ -218,5 +317,9 @@ a {
     .page-number {
         margin-left: 1.2rem;
         margin-right: 1.2rem;
+    }
+
+    pre {
+        font-size: 14px;
     }
 }

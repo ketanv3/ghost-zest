@@ -4,7 +4,7 @@ into the {body} of the default.hbs template --}}
 
 {{!-- The big featured header, it uses blog cover image as a BG if available --}}
 <header class="site-header max-width">
-    <div class="site-title">{{@blog.title}}</div>
+    <div class="site-title"><a href="{{@blog.url}}" class="site-nav-link hover-blue">{{@blog.title}}</a></div>
     {{> "site-nav"}}
 </header>
 
