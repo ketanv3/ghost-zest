@@ -2,7 +2,7 @@
     "name": "ghost-zest",
     "description": "A Ghost theme for my personal blog (blog.codezest.in).",
     "demo": "https://blog.codezest.in",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "engines": {
         "ghost": ">=1.2.0"
     },
@@ -25,10 +25,11 @@
         ]
     },
     "keywords": [
+        "ghost-theme",
         "ghost",
         "theme"
     ],
     "config": {
-        "posts_per_page": 3
+        "posts_per_page": 15
     }
 }
